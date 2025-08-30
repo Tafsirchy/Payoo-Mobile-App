@@ -3,7 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwindcss  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Payoo</title>
   </head>
-  <body></body>
+  <body
+    class="bg-[#f4f5f7] h-[100vh] flex flex-col justify-center items-center"
+  >
+    <div
+      class="w-[300px] h-[130px] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center"
+    >
+      <img src="assets/Group.png" alt="" />
+    </div>
+    <form class="bg-white rounded-3xl p-8 w-[380px]">
+      <div>
+        <label class="text-[16px] font-medium" for="">Mobile Number</label>
+        <br />
+        <input
+          id="mobile-number"
+          type="text"
+          placeholder="Enter Your Number"
+          class="input rounded-4xl mt-3 bg-[#f4f5f7]"
+        />
+      </div>
+      <div class="mt-4">
+        <label class="text-[16px] font-medium" for="">4 Digit Pin</label>
+        <br />
+        <input
+          id="pin-number"
+          type="text"
+          placeholder="Enter 4 Digit Pin"
+          class="input rounded-4xl mt-3 bg-[#f4f5f7]"
+        />
+      </div>
+
+      <!-- with type Button -->
+      <!-- <button
+        type="button"
+        id="login-btn"
+        class="btn text-white bg-[#0874F2] mt-4 w-full rounded-4xl"
+      >
+        Login
+      </button> -->
+
+      <!-- with preventDefault -->
+      <button
+        id="login-btn"
+        class="btn text-white bg-[#0874F2] mt-4 w-full rounded-4xl"
+      >
+        Login
+      </button>
+    </form>
+    <!-- js script  -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
