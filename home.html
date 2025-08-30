@@ -3,9 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwindcss  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Home Page</title>
   </head>
-  <body>
-    <h1>I am Home Page</h1>
+  <body class="bg-[#f4f5f7] h-[100vh]">
+    <section class="max-w-lg mx-auto bg-white p-[20px] rounded-b-3xl">
+      <!-- header -->
+      <div
+        class="min-h-[50px] flex justify-between items-center pb-[20px] border-b-1 border-gray-300"
+      >
+        <div class="flex items-center gap-[10px]">
+          <img class="h-[50px]" src="assets/Group.png" alt="" />
+          <div>
+            <h2 class="text-[18px] font-extrabold">$ <span>45000</span></h2>
+            <p class="text-[14px] text-gray-500 mt-[6px]">Available Balance</p>
+          </div>
+        </div>
+        <div>
+          <button class="btn text-gray-500 rounded-[8px]">
+            <i
+              class="fa-solid fa-arrow-right-from-bracket rotate-[180deg] text-gray-700"
+            ></i>
+            <!-- <img class="w-[20px] h-[20px]" src="assets/logout.png" alt="" /> -->
+            Log Out
+          </button>
+        </div>
+      </div>
+
+
+    <!-- all form section -->
+    <section>
+      <div class="all-form-section"></div>
+    </section>
   </body>
 </html>
