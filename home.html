@@ -30,7 +30,9 @@
         <div class="flex items-center gap-[10px]">
           <img class="h-[50px]" src="assets/Group.png" alt="" />
           <div>
-            <h2 class="text-[18px] font-extrabold">$ <span>45000</span></h2>
+            <h2 class="text-[18px] font-extrabold">
+              $<span id="available-balance">45000</span>
+            </h2>
             <p class="text-[14px] text-gray-500 mt-[6px]">Available Balance</p>
           </div>
         </div>
@@ -105,7 +107,10 @@
           <div>
             <label class="text-[16px] font-medium" for="">Select a Bank</label>
             <br />
-            <select class="select w-full rounded-4xl mt-3 bg-[#f4f5f7]">
+            <select
+              id="bank"
+              class="select w-full rounded-4xl mt-3 bg-[#f4f5f7]"
+            >
               <option>Select back</option>
               <option>Dutch Bangla Bank</option>
               <option>IFIC Bank</option>
@@ -120,7 +125,7 @@
             >
             <br />
             <input
-              id="mobile-number"
+              id="account-number"
               type="text"
               placeholder="Enter 11 digit account number"
               class="input w-full rounded-4xl mt-3 bg-[#f4f5f7]"
@@ -130,7 +135,7 @@
             <label class="text-[16px] font-medium" for="">Amount to Add</label>
             <br />
             <input
-              id="mobile-number"
+              id="add-amount"
               type="text"
               placeholder="Add Amount to withdraw"
               class="input w-full rounded-4xl mt-3 bg-[#f4f5f7]"
@@ -140,14 +145,14 @@
             <label class="text-[16px] font-medium" for="">Pin Number</label>
             <br />
             <input
-              id="mobile-number"
+              id="pin-number"
               type="text"
               placeholder="Enter 4 digit pin number"
               class="input w-full rounded-4xl mt-3 bg-[#f4f5f7]"
             />
           </div>
           <button
-            id="login-btn"
+            id="add-money-btn"
             class="btn h-[50px] text-white bg-[#0874F2] mt-4 w-full rounded-4xl text-[16px]"
           >
             Add Money
@@ -155,5 +160,6 @@
         </form>
       </div>
     </section>
+    <script src="./js/home-script.js"></script>
   </body>
 </html>
