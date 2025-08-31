@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle</title>
+  </head>
+  <body>
+    <button id="btn-1">Button 1</button>
+    <button id="btn-2">Button 2</button>
+
+    <h1 id="h1">I am heading 1</h1>
+    <h1 id="h2">I am heading 2</h1>
+
+    <script>
+      document.getElementById("btn-1").addEventListener("click", function () {
+        // heading 2 remove during click on button 1
+        document.getElementById("h2").style.display = "none";
+
+        // heading 1 call during click on button 1
+        document.getElementById("h1").style.display = "block";
+      });
+
+      document.getElementById("btn-2").addEventListener("click", function () {
+        // heading 1 remove during click on button 2
+        document.getElementById("h1").style.display = "none";
+
+        // heading 2 call during click on button 2
+        document.getElementById("h2").style.display = "block";
+      });
+    </script>
+  </body>
+</html>
