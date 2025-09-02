@@ -10,11 +10,14 @@ document.getElementById("login-btn").addEventListener("click", function(event){
     const pinNumberValue = document.getElementById("pin-number").value
     const pinNumberValueConverted = parseInt(pinNumberValue);
 
+
+
     if(mobileNumberValueConverted === mobileNumber && pinNumberValueConverted === pinNumber){
-        // alert("Login Successful");
 
         // navigate to another page 
         window.location.href = "./home.html"
+        
+
     }
     else{
         alert("Login Failed");
